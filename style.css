@@ -21,11 +21,12 @@
     width: 100%;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 }
 
 .navbar.sticky{
-    padding: 30px 0;
-    background-color: #808080;
+    padding: 15px 0;
+    background-color: black;
 }
 
 .navbar .max-width{
@@ -42,6 +43,11 @@
 
 .navbar .logo a span{
     color: crimson;
+    transition: all 0.3 ease;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
 }
 
 .navbar .menu li{
@@ -60,17 +66,29 @@
     color:crimson
 }
 
+/*menu btn styling*/
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
 
 /*home section styling*/
 
-.home{
+.home {
     display: flex;
-    background: url("img/banner.jpg") no-repeat center;
+    background-image: url("img/op4.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* Efecto parallax */
+    background-position: center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .home .max-width{
     margin: auto 0 auto 40px;
@@ -96,19 +114,48 @@
     font-weight: 500;
 }
 
-@media (max-width: 991px){
+/*responsive media query start*/
+
+@media (max-width: 947px){
+    
     .max-width{
         padding: 0 50px;
     }
+
+    .menu-btn{ 
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
     .navbar .menu{
         position: fixed;
+        background-image: url("img/op3.jpg");
+        background-attachment: fixed;
         height: 100vh;
         width: 100%;
-        left: 0;
+        left: -100%;
         top: 0;
-        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
     }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
     .navbar .menu li{
-        display: inline-block;
+        display: block;
     }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    
 }
