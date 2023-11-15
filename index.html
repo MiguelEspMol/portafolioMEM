@@ -6,173 +6,11 @@
     <title>Portafolio Web</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-
-/*navbar styling*/
-
-.navbar {
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky{
-    padding: 15px 0;
-    background-color: black;
-}
-
-.navbar .max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-.navbar .logo a span{
-    color: crimson;
-    transition: all 0.3 ease;
-}
-
-.navbar.sticky .logo a span{
-    color: #fff;
-}
-
-.navbar .menu li{
-    list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: 0.3s ease;
-}
-
-.navbar .menu li a:hover{
-    color:crimson
-}
-
-/*menu btn styling*/
-.menu-btn{
-    color:#fff;
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-
-
-/*home section styling*/
-
-.home {
-    display: flex;
-    background-image: url("img/op4.jpg");
-    background-size: cover;
-    background-attachment: fixed; /* Efecto parallax */
-    background-position: center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-.home .max-width{
-    margin: auto 0 auto 40px;
-}
-
-.home .home-content .text-1{
-    font-size: 27px;
-}
-
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span{
-    color: #808080;
-    font-weight: 500;
-}
-
-/*responsive media query start*/
-
-@media (max-width: 947px){
-    
-    .max-width{
-        padding: 0 50px;
-    }
-
-    .menu-btn{ 
-        display: block;
-        z-index: 999;
-    }
-
-    .menu-btn i.active:before{
-        content: '\f00d';
-    } 
-
-    .navbar .menu{
-        position: fixed;
-        background-image: url("img/op3.jpg");
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.4s ease;
-    }
-
-    .navbar .menu.active{
-        left: 0;
-    }
-
-    .navbar .menu li{
-        display: block;
-    }
-
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    
-}
-
-</style>
 <body>
 
     <nav class="navbar">
@@ -199,18 +37,29 @@
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Miguel Espinoza Mollinedo</div>
                 <div class="text-3">and Im a <span>Web Developer</span></div>
+                <a href="#">Work Contact</a>
             </div>
         </div>
     </section>
     
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ducimus impedit culpa exercitationem sed deleniti, 
-        voluptates accusamus volu  ptatum consectetur fugit eius molestias dolore molestiae, placeat nostrum, ad sit possimus 
-        et dolores quam! Cumque et, voluptatem dolores beatae in temporibus illum ab vel nesciunt, quae at, aliquid repellat 
-        delectus neque? Eligendi, aliquid quas vero laboriosam rem odio doloremque velit ut molestias tempore aspernatur quidem 
-        odit optio ipsum temporibus corrupti dolorem amet quos minus culpa nesciunt assumenda officiis. Dolorum, architecto repudiandae. 
-        Iusto nisi hic tempora sint nulla sed nesciunt ab delectus ullam, mollitia illum vero optio soluta dolore, magni vitae rem incidunt 
-        suscipit magnam libero accusamus explicabo voluptatum iste possimus. Eaque provident assumenda rerum expedita, eum ipsa voluptatem 
-        corporis animi laborum! Excepturi cupiditate quidem voluptates eligendi? Cum libero molestias quam sequi similique, ipsa excepturi modi ad hic obcaecati sed perspiciatis consequuntur dolores dolor laborum doloribus. Quasi temporibus ab, quae voluptatibus vero accusantium repellat doloribus commodi cumque quam tempore, libero, vitae minus dolorem consequuntur! Autem praesentium ut, repudiandae id laborum laudantium dignissimos deleniti, harum vitae aspernatur, itaque numquam nesciunt tempora earum tenetur quas qui facere nihil suscipit soluta sunt. Ratione modi nostrum dolores rerum quaerat? Dicta nemo corporis, aliquid commodi ad soluta perferendis.</p>
+    <!-- about section starts here -->
+
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                     <img src="img/profile.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Miguel Espinoza and I'm a <span> Web Developer</span></div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima quaerat voluptatibus id provident ratione, accusamus eveniet facilis excepturi reprehenderit nulla natus illo harum nihil, quae aliquid eligendi placeat optio officiis.</p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
         <script src="script.js"></script>
 
