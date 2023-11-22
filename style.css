@@ -138,7 +138,7 @@ section{
     padding: 100px 0;
 }
 
-.about, .services, .skills{
+.about, .services, .skills, .teams{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -239,16 +239,18 @@ section .title::after{
 
 /*services section starts here*/
 
-.services{
+.services, .teams{
     color: #fff;
     background: #111;
 }
 
-.services .title::before{
+.services .title::before,
+.teams .title::before{
     background: #fff;
 }
 
-.services .title::after{
+.services .title::after,
+.teams .title::after{
     background: #111;
     content: "what I provide";
 }
@@ -380,6 +382,82 @@ section .title::after{
 .skills .skills-content .right .mysql::before{
     width: 65%;
 }
+
+/* teams section styling start */
+
+.teams .title::after{
+    content: "my teamates";
+}
+
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.4s ease;
+}
+
+.teams .carousel .card:hover{
+    background: crimson;
+}
+
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.4s ease;
+}
+
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.4s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot.active:hover{
+    background: crimson!important;
+}
+
+
 
 /*responsive media query start*/
 
