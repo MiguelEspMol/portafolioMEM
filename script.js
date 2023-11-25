@@ -27,14 +27,14 @@ $(document).ready(function(){
     // typing animation script
 
     var typed = new Typed(".typing", {
-        strings: ["Web Developer.", "Designer.", "Ingenier.", "Gamer."],
+        strings: ["Software Developer.", "Web Designer."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Web Developer.", "Designer.", "Ingenier.", "Gamer."],
+        strings: ["Software Developer.", "Web Designer."],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -63,3 +63,27 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// traductor al ingles
+
+function traducir() {
+    // Obtén el texto original
+    var spanish = document.getElementById("spanish");
+
+    // Usa el servicio de traducción de Google Translate (puedes reemplazarlo con otra opción)
+    // Aquí utilizo la API de Google Translate para traducir de español a inglés
+    var urlTraduccion = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=en&dt=t&q=" + encodeURIComponent(spanish.innerText);
+
+    // Realiza la solicitud de traducción
+    fetch(urlTraduccion)
+        .then(response => response.json())
+        .then(data => {
+            // Extrae y muestra el texto traducido
+            var inglish = data[0][0][0];
+            spanish.innerText = inglish;
+        })
+        .catch(error => {
+            console.error('Error al traducir:', error);
+        });
+}
