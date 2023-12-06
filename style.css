@@ -111,9 +111,8 @@ html{
 
 .home {
     display: flex;
-    background-image: url("img/op4.jpg");
+    background-color: #1F2937;
     background-size: cover;
-    background-attachment: fixed; /* Efecto parallax */
     background-position: center;
     height: 100vh;
     color: #fff;
@@ -274,7 +273,7 @@ section .title::after{
 
 .services, .teams{
     color: #fff;
-    background: #111;
+    background: #1F2937;
 }
 
 .services .title::before,
@@ -326,7 +325,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/*skills section styling*/
+/*skills section styling
 
 .skills .title::after{
     content: "what I know";
@@ -416,7 +415,7 @@ section .title::after{
     width: 65%;
 }
 
-/* teams section styling start */
+/* teams section styling start 
 
 .teams .title::after{
     content: "my teamates";
@@ -489,6 +488,8 @@ section .title::after{
 .owl-dot.active:hover{
     background: crimson!important;
 }
+*/
+
 
 
 
