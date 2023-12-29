@@ -12,6 +12,7 @@ $(document).ready(function(){
         }
     });
 
+
     //slide up script
 
     $('.scroll-up-btn').click(function(){
@@ -87,3 +88,4 @@ function traducir() {
             console.error('Error al traducir:', error);
         });
 }
+
