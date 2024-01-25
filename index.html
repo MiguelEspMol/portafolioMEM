@@ -16,24 +16,122 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <title> Responsive portfolio website Ansel </title>
+        <title> Responsive portfolio website Miguel </title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Miguel</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase-alt-2' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-rounded-detail'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+            </nav>
         </header>
 
         <!--=============== MAIN ===============-->
         <main class="main">
             <!--=============== HOME ===============-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Miguel Espinoza</h1>
+                        <h3 class="home__education">I'm a passionate web development and designer.</h3>
+
+                        <div class="home__buttons">
+                            <a download="" href="assets/pdf/#" class="button button--ghost">
+                                Download CV
+                            </a>
+                            <a href="#about" class="button">Experience</a>
+                        </div>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="assets/img/perfil.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#" class="home__social-link">
+                            <i class='bx bxl-facebook-square'></i>
+                        </a>
+                        <a href="https://github.com/MiguelEspMol" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.instagram.com/migue_em/" class="home__social-link">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon'></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
             </section>
             
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
-                
+                <span class="section__subtitle">My Own</span>
+                <h2 class="section__title">Experience</h2>
+
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <div class="about__info">
+                            <div class="about__box"> 
+                                <h3 class="about__title">
+                                    Experience
+                                    <i class='bx bxs-briefcase-alt-2'></i>
+                                </h3><br>
+                                <span class="about__subtitles">Coffe Software Developer &bull; Caja de Salud de Caminos</span><br>
+                                <span class="about__subtitle">May 2023 - Ago 2023</span><br><br>
+                            </div>
+                        </div>
+
+                        <p class="about__description">
+                            &bull;  Designing a user software from scratch and implementing it in a web interface using PHP, HTML, JS and CSS. <br><br>
+
+                            &bull;  This successfully developed software replaced the way that the kitchen manager use to take orders, avoiding inconsistencies in the information. <br><br>
+
+                            &bull;  It increased the speed of capturing customer data by 300% and improved efficiency in order management and control of assets and liabilities in the hospital's kitchen service.
+                        </p>
+                    </div>
+                </div>
             </section>
 
             <!--=============== SKILLS ===============-->
