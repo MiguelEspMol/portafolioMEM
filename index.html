@@ -98,20 +98,20 @@
                     </a>-->
                 </div>
             </section>
-            
+            <br><br>
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
                 <span class="section__subtitle"></span>
-                <h2 class="section__title">Experience</h2>
+                <h2 class="section__title">Experience <i class='bx bxs-briefcase-alt-2'></i></h2>
 
                 <div class="about__container container grid">
                     <div class="about__data">
                         <div class="about__info">
                             <div class="about__box"> 
-                                <h3 class="about__title">
+                                <!--<h3 class="about__title">
                                     Experience
                                     <i class='bx bxs-briefcase-alt-2'></i>
-                                </h3><br>
+                                </h3><br>-->
                                 <span class="about__subtitles">Coffe Software Developer &bull; Caja de Salud de Caminos</span><br>
                                 <span class="about__subtitle">May 2023 - Ago 2023</span><br><br>
                             </div>
@@ -127,12 +127,12 @@
                     </div>
                 </div>
             </section>
-
+            <br>
 
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
-                <span class="section__subtitle">My Portafolio</span>
-                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">Projects <i class='bx bxs-star-half'></i></h2>
 
                 <div class="work__filters">
                     <span class="work__item active-work" data-filter="all">All</span>
@@ -161,21 +161,19 @@
                             Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                         </a>          
                     </div>
-                    
                 </div>
-
             </section>
-            
+            <br><br>
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
-                <span class="section__subtitle">Get in Touch</span>
-                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">Contact Me <i class='bx bxs-envelope'></i></h2>
 
                 <div class="contact__container container grid">
                     <div class="contact__content">
                         <h3 class="contact__title">Talk to me</h3>
 
-                        <div class="contact__info">
+                        <!-- <div class="contact__info">
                             <div class="contact__card">
                                 <i class='bx bx-mail-send contact__card-icon'></i>
                                 <h3 class="contact__card-title">Email</h3>
@@ -186,7 +184,7 @@
                                 </a>
                             </div>
                         </div>
-
+                        <br> -->
                         <div class="contact__info">
                             <div class="contact__card">
                                     <i class='bx bxl-whatsapp contact__card-icon'></i>
@@ -198,40 +196,28 @@
                                     </a>
                             </div>
                         </div>
-
-                        <div class="contact__info">
-                            <div class="contact__card">
-                                    <i class='bx bxl-github contact__card-icon'></i>
-                                    <h3 class="contact__card-title">Github</h3>
-                                    <span class="contact__card-data">MiguelEspMol</span>
-
-                                    <a href="https://github.com/MiguelEspMol" target="_blank" class="contact__button">
-                                        Write to Me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
-                                    </a>
-                            </div>
-                        </div>
+                        <br>
                     </div>
 
                     <div class="contact__content">
                         <h3 class="contact__title">Write me your Project</h3>
-
-                        <form action="" class="contact__form">
+                        <form id="contactForm" action="https://formspree.io/f/xnqeoqwd" method="POST" class="contact__form">
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Names</label>
-                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                                <label for="name" class="contact__form-tag">Names</label>
+                                <input type="text" id="name" name="name" placeholder="Insert your name" class="contact__form-input">
                             </div>
-
+                            
                             <div class="contact__form-div">
-                                <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="insert your email" class="contact__form-input">
+                                <label for="email" class="contact__form-tag">Mail</label>
+                                <input type="email" id="email" name="email" placeholder="insert your email" class="contact__form-input">
                             </div>
-
+                            
                             <div class="contact__form-div contact__form-area">
-                                <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
+                                <label for="project" class="contact__form-tag">Project</label>
+                                <textarea id="project" name="project" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
                             </div>
-
-                            <button class="button">Send Message</button>
+                            <!-- Cambié el tipo de botón a button y agregué el evento onclick -->
+                            <button type="button" class="button" onclick="submitForm()">Send Message To: <br>miguelespmol@gmail.com</button>
                         </form>
                     </div>
                 </div>

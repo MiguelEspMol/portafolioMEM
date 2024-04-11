@@ -141,6 +141,9 @@ body.light-theme{
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 
+.light-theme .section__title{
+  color: var(--first-color);
+}
 .light-theme .section__subtitle{
   color: var(--text-color);
 }
@@ -189,8 +192,8 @@ body.light-theme{
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
-  margin-left: 1rem;
+  max-width: 770px;
+  margin-left: 1em;
   margin-right: 1rem;
 }
 
@@ -223,6 +226,12 @@ body.light-theme{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
+
+.section__title {
+  font-size: 3rem; /* Cambia el tamaño de la fuente según tu preferencia */
+  color: #F1F2F3;
+}
+
 
 /*=============== HEADER & NAV===============*/
 .header{
@@ -450,8 +459,13 @@ body.light-theme{
 .about__description {
   color: white;
   line-height: 1.5; /* Ajusta el espaciado entre líneas según sea necesario */
+  width: 100%;
 }
 
+.about__data {
+  max-width: auto; /* Ajusta el ancho máximo al mismo valor que el contenedor principal */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
 
 
 

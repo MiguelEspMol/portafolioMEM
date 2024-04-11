@@ -101,3 +101,15 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data`)
 sr.reveal(`.home__handle`, {delay: 700})
 sr.reveal(`.home__scroll`, {delay: 900, origin: 'bottom'})
+
+/*=============== CLEAR FORM DATA ====================*/
+function submitForm() {
+    // Envía el formulario
+    document.getElementById("contactForm").submit();
+    // Redirige a la página principal local
+    window.location.href = "http://localhost/portafolioMEM/?#home";
+    // Limpia los campos del formulario (opcional)
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("project").value = "";
+}
