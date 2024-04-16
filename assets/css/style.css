@@ -334,7 +334,8 @@ body.light-theme{
 }
 
 .home__img{
-  width: 160px;
+  width: 2000px;
+  height: 350px;
 }
 
 .home__handle{
@@ -614,6 +615,10 @@ body.light-theme{
   transition: .4s;
 }
 
+.send__icon{
+  font-size: 1.2rem;  
+}
+
 .contact__form-div{
   position: relative;
   margin-bottom: 2rem;
@@ -652,6 +657,40 @@ body.light-theme{
 .contact__form-area textarea{
   resize: none;
 }
+
+.button {
+  position: relative;
+}
+
+.send__button::after {
+  content: "Send me email";
+}
+
+.copy__button::after {
+  content: "Copy email";
+}
+
+.button::after {
+  position: absolute;
+  top: -30px; /* Ajusta esta cantidad según sea necesario para el posicionamiento */
+  left: 50%; /* Coloca el mensaje en el centro horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente el mensaje */
+  background-color: rgba(0, 0, 0, 0.7); /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 1px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  visibility: hidden; /* Inicialmente oculto */
+  opacity: 0; /* Inicialmente transparente */
+  transition: visibility 0s, opacity 0.5s; /* Transición suave */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+  line-height: normal; /* Restaura la altura de línea predeterminada */
+}
+
+.button:hover::after {
+  visibility: visible; /* Mostrar el mensaje cuando el cursor está encima */
+  opacity: 1; /* Hacer el mensaje completamente visible */
+}
+
 
 /*=============== FOOTER ===============*/
 .footer{

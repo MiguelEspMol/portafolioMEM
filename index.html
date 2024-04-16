@@ -77,7 +77,7 @@
                     </div>
 
                     <div class="home__handle">
-                        <img src="assets/img/perfil.png" alt="" class="home__img">
+                        <img src="assets/img/micky.png" alt="" class="home__img">
                     </div>
 
                     <!--<div class="home__social">
@@ -171,7 +171,7 @@
 
                 <div class="contact__container container grid">
                     <div class="contact__content">
-                        <h3 class="contact__title">Talk to me</h3>
+                        <h3 class="contact__title">Whatsapp</h3>
 
                         <!-- <div class="contact__info">
                             <div class="contact__card">
@@ -188,7 +188,7 @@
                         <div class="contact__info">
                             <div class="contact__card">
                                     <i class='bx bxl-whatsapp contact__card-icon'></i>
-                                    <h3 class="contact__card-title">Whatsapp</h3>
+                                    <br>
                                     <span class="contact__card-data">+591 70556553</span>
     
                                     <a href="https://wa.me/+59170556553" target="_blank" class="contact__button">
@@ -200,24 +200,14 @@
                     </div>
 
                     <div class="contact__content">
-                        <h3 class="contact__title">Write me your Project</h3>
-                        <form id="contactForm" action="https://formspree.io/f/xnqeoqwd" method="POST" class="contact__form">
+                        <h3 class="contact__title">Email</h3>
+                        <form id="contactForm" class="contact__form">
                             <div class="contact__form-div">
-                                <label for="name" class="contact__form-tag">Names</label>
-                                <input type="text" id="name" name="name" placeholder="Insert your name" class="contact__form-input">
-                            </div>
-                            
-                            <div class="contact__form-div">
-                                <label for="email" class="contact__form-tag">Mail</label>
-                                <input type="email" id="email" name="email" placeholder="insert your email" class="contact__form-input">
-                            </div>
-                            
-                            <div class="contact__form-div contact__form-area">
-                                <label for="project" class="contact__form-tag">Project</label>
-                                <textarea id="project" name="project" cols="30" rows="10" placeholder="Write your project" class="contact__form-input"></textarea>
-                            </div>
-                            <!-- Cambié el tipo de botón a button y agregué el evento onclick -->
-                            <button type="button" class="button" onclick="submitForm()">Send Message To: <br>miguelespmol@gmail.com</button>
+                                <label for="name" class="contact__form-tag"></label>
+                                <input type="text" id="name" name="name" value="          miguelespmol@gmail.com" disabled class="contact__form-input">
+                            </div>     
+                            <button onclick="window.location.href='mailto:miguelespmol@gmail.com'" type="button" class="button send__button"><i class='bx bxs-send'></i></button>
+                            <button onclick="copyToClipboard('miguelespmol@gmail.com')" type="button" class="button copy__button"><i class='bx bxs-copy-alt'></i></button>
                         </form>
                     </div>
                 </div>
