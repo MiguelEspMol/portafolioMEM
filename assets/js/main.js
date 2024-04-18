@@ -125,3 +125,26 @@ function copyToClipboard(text) {
     document.body.removeChild(el);
     /*alert('Text copied to clipboard!');*/
 }
+
+
+/* ============= CHANGE LENGUAGE =====================*/
+const languageButton = document.getElementById("lenguaje-button");
+let isEnglish = true;
+
+const toggleLanguage = () => {
+    const elementsToTranslate = document.querySelectorAll('.translate');
+    
+    elementsToTranslate.forEach(element => {
+        if (isEnglish) {
+            element.textContent = element.getAttribute('data-english');
+        } else {
+            element.textContent = element.getAttribute('data-spanish');
+        }
+    });
+    
+    isEnglish = !isEnglish;
+}
+
+toggleLanguage(); 
+
+languageButton.addEventListener('click', toggleLanguage);

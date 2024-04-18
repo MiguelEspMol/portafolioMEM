@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/img/avatar.webp" type="image/x-icon">
 
         <!--=============== BOXICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -16,7 +16,7 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/style.css">
 
-        <title> Responsive portfolio website Miguel </title>
+        <title> MiguelEM Portafolio </title>
     </head>
     <body>
         <!--=============== HEADER ===============-->
@@ -52,8 +52,18 @@
                     </ul>
                 </div>
 
-                <!-- Theme change button -->
-                <i class='bx bx-moon change-theme' id="theme-button"></i>
+                <div class="buttons-container">
+                    <div class="tooltip__container">
+                        <i class='bx bx-globe change-lenguaje' id="lenguaje-button"></i>
+                        <span class="tooltip__text translate" data-english="Spanish" data-spanish="Inglés">Spanish</span>
+                    </div>
+                    <div class="tooltip__container">
+                        <i class='bx bx-moon change-theme' id="theme-button"></i>
+                        <span class="tooltip__text translate" data-english="Theme" data-spanish="Tema">Theme</span>
+                    </div>
+                </div>
+                
+                
 
             </nav>
         </header>
@@ -64,20 +74,23 @@
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__data">
-                        <span class="home__greeting">Hello, I'm</span>
+                        <span class="home__greeting translate" data-english="Hello, I'm" data-spanish="Hola, Soy">Hello, I'm</span>
                         <h1 class="home__name">Miguel Espinoza</h1>
-                        <h3 class="home__education">I'm a passionate web development and designer.</h3>
+                        <h3 class="home__education translate" data-english="I'm a passionate web development and design UI/UX." data-spanish="Soy un apasionado del desarrollo web y del diseño UI/UX.">I'm a passionate web development and design UI/UX.</h3>
 
                         <div class="home__buttons">
                             <a download="" href="assets/pdf/Miguel Espinoza.pdf" class="button button--ghost">
-                                <span class="bx bxs-user-detail"></span> RESUME
+                                <span class="bx bxs-user-detail"></span>
+                                <span class="translate" data-english="RESUME" data-spanish="CURRÍCULUM">RESUME</span>
                             </a>
+                            
+                                                      
                             <!--<a href="#about" class="button">Experience</a>-->
                         </div>
                     </div>
 
                     <div class="home__handle">
-                        <img src="assets/img/micky.png" alt="" class="home__img">
+                        <img src="assets/img/avatar.webp" alt="avatar" class="home__img">
                     </div>
 
                     <!--<div class="home__social">
@@ -102,28 +115,35 @@
             <!--=============== ABOUT ===============-->
             <section class="about section" id="about">
                 <span class="section__subtitle"></span>
-                <h2 class="section__title">Experience <i class='bx bxs-briefcase-alt-2'></i></h2>
+                <h2 class="section__title"><span class="translate" data-english="Experience" data-spanish="Experiencia">Experience</span> <i class='bx bxs-briefcase-alt-2'></i></h2>
+
 
                 <div class="about__container container grid">
                     <div class="about__data">
                         <div class="about__info">
-                            <div class="about__box"> 
-                                <!--<h3 class="about__title">
-                                    Experience
-                                    <i class='bx bxs-briefcase-alt-2'></i>
-                                </h3><br>-->
-                                <span class="about__subtitles">Coffe Software Developer &bull; Caja de Salud de Caminos</span><br>
-                                <span class="about__subtitle">May 2023 - Ago 2023</span><br><br>
+                            <div class="about__info">
+                                <div class="about__info">
+                                    <div class="about__box">
+                                        <span class="translate" data-english="Hospital Kitchen Software Developer" data-spanish="Desarrollador de Software para la cocina del Hospital">Hospital Kitchen Software Developer</span> &bull; Caja de Salud de Caminos<br>
+                                        <span class="about__subtitle">May</span> 2023 - <span class="translate" data-english="Aug" data-spanish="Ago">Aug</span> 2023<br><br>
+                                    </div>
+                                </div>
+                                
                             </div>
+                            
                         </div>
                         <br>
                         <p class="about__description">
-                            &bull;  Designing a user software from scratch and implementing it in a web interface using PHP, HTML, JS and CSS. <br><br>
-
-                            &bull;  This successfully developed software replaced the way that the kitchen manager use to take orders, avoiding inconsistencies in the information. <br><br>
-
-                            &bull;  It increased the speed of capturing customer data by 300% and improved efficiency in order management and control of assets and liabilities in the hospital's kitchen service.
+                            &bull;
+                            <span class="translate" data-english="Administration system with PHP and JS for management of orders, sales and a daily product inventory." data-spanish="Sistema de administración con PHP y JS para gestión de pedidos, ventas e inventario diario de productos.">Administration system with PHP and JS for management of orders, sales and a daily product inventory.</span> <br><br>
+                            &bull;
+                            <span class="translate" data-english="Designing a user interface from scratch and implementing it in a web interface using CSS." data-spanish="Diseño de una interfaz de usuario desde cero implementandola en una interfaz web usando CSS.">Designing a user interface from scratch and implementing it in a web interface using CSS.</span> <br><br>
+                            &bull;
+                            <span class="translate" data-english="This successfully developed software replaced the way that the kitchen manager used to take orders and make reports, avoiding inconsistencies in the information." data-spanish="Este software desarrollado con éxito reemplazó la forma en que el jefe de cocina solía tomar pedidos y realizar informes, evitando inconsistencias en la información.">This successfully developed software replaced the way that the kitchen manager used to take orders and make reports, avoiding inconsistencies in the information.</span> <br><br>
+                            &bull;
+                            <span class="translate" data-english="It increased the speed of capturing customer order by 200% and improved efficiency in kitchen management and control of assets and liabilities in the sales." data-spanish="Aumentó en un 200% la velocidad de captura de pedidos de los clientes y mejoró la eficiencia en la gestión de cocina y el control de activos y pasivos en las ventas.">It increased the speed of capturing customer order by 200% and improved efficiency in kitchen management and control of assets and liabilities in the sales.</span>
                         </p>
+                        
                     </div>
                 </div>
             </section>
@@ -132,10 +152,10 @@
             <!--=============== WORK ===============-->
             <section class="work section" id="work">
                 <span class="section__subtitle"></span>
-                <h2 class="section__title">Projects <i class='bx bxs-star-half'></i></h2>
+                <h2 class="section__title"><span class="translate" data-english="Projects" data-spanish="Proyectos">Projects</span> <i class='bx bxs-star-half'></i></h2>
 
                 <div class="work__filters">
-                    <span class="work__item active-work" data-filter="all">All</span>
+                    <span class="work__item active-work translate" data-filter="all" data-english="All" data-spanish="Todos">All</span>
                     <span class="work__item" data-filter=".web">Web</span>
                     <span class="work__item" data-filter=".software">Software</span>
                 </div>
@@ -144,7 +164,7 @@
                     <div class="work__card mix web">
                         <img src="assets/img/search.png" alt="" class="work__img">
 
-                        <h3 class="work__title">Web Design</h3>
+                        <h3 class="work__title translate" data-english="Web Design" data-spanish="Diseño Web">Web Design</h3>
 
                         <a href="https://reactapp-ab1e4.firebaseapp.com/" class="work__button">
                             Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -153,13 +173,13 @@
                     </div>
 
                     <div class="work__card mix software">
-                        <img src="assets/img/w" alt="" class="work__img">
+                        <img src="assets/img/Fondo.png" alt="" class="work__img">
 
-                        <h3 class="work__title">Software Design</h3>
+                        <h3 class="work__title translate" data-english="Software Design" data-spanish="Diseño de Software">Software Design</h3>
 
                         <a href="https://github.com/MiguelEspMol/ventas.git" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
-                        </a>          
+                            <span class="translate" data-english="Code" data-spanish="Código">Code</span> <i class='bx bx-right-arrow-alt work__icon'></i>
+                        </a>         
                     </div>
                 </div>
             </section>
@@ -167,7 +187,8 @@
             <!--=============== CONTACT ===============-->
             <section class="contact section" id="contact">
                 <span class="section__subtitle"></span>
-                <h2 class="section__title">Contact Me <i class='bx bxs-envelope'></i></h2>
+                <h2 class="section__title"><span class="translate" data-english="Contact Me" data-spanish="Contáctame">Contact Me</span> <i class='bx bxs-envelope'></i></h2>
+                
 
                 <div class="contact__container container grid">
                     <div class="contact__content">
@@ -192,7 +213,7 @@
                                     <span class="contact__card-data">+591 70556553</span>
     
                                     <a href="https://wa.me/+59170556553" target="_blank" class="contact__button">
-                                        Write to Me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+                                        <span class="translate" data-english="Write to Me" data-spanish="Escríbeme">Write to Me</span> <i class='bx bx-right-arrow-alt contact__button-icon'></i>
                                     </a>
                             </div>
                         </div>
@@ -205,9 +226,9 @@
                             <div class="contact__form-div">
                                 <label for="name" class="contact__form-tag"></label>
                                 <input type="text" id="name" name="name" value="          miguelespmol@gmail.com" disabled class="contact__form-input">
-                            </div>     
-                            <button onclick="window.location.href='mailto:miguelespmol@gmail.com'" type="button" class="button send__button"><i class='bx bxs-send'></i></button>
-                            <button onclick="copyToClipboard('miguelespmol@gmail.com')" type="button" class="button copy__button"><i class='bx bxs-copy-alt'></i></button>
+                            </div>
+                            <button onclick="window.location.href='mailto:miguelespmol@gmail.com'" type="button" class="button send__button"><i class='bx bxs-send'></i><span class="tooltip-text translate" data-english="Send me Email" data-spanish="Envíame un Email">Send me Email</span></button>
+                            <button onclick="copyToClipboard('miguelespmol@gmail.com')" type="button" class="button copy__button"><i class='bx bxs-copy-alt'></i><span class="tooltip-text translate" data-english="Copy Email" data-spanish="Copiar el Email">Copy Email</span></button>
                         </form>
                     </div>
                 </div>
@@ -218,10 +239,10 @@
         <!--=============== FOOTER ===============-->
         <footer class="footer">
             <div class="footer__container container">
-                <h1 class="footer__title">Socials <i class='bx bx-at'></i></h1>
+                <h1 class="footer__title"><span class="translate" data-english="Socials" data-spanish="Redes">Socials</span> <i class='bx bx-at'></i></h1>
 
                 <ul class="footer__social">
-                    <a href="#" target="_blank" class="footer__social-link">
+                    <a href="https://linkedin.com/in/miguel-espinoza-mollinedo-6b74852a2" target="_blank" class="footer__social-link">
                         <i class='bx bxl-linkedin'></i>
                     </a>
 
