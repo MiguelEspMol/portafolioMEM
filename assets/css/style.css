@@ -711,12 +711,12 @@ body.light-theme{
 
 .tooltip-text {
   visibility: hidden;
-  width: 110px;
+  width: 100px;
   background-color: black;
   color: white;
   text-align: center;
   border-radius: 7px;
-  padding: 4px;
+  padding: 3px;
   font-size: 0.8rem;
   line-height: 1.2;
   position: absolute;

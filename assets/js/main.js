@@ -148,3 +148,5 @@ const toggleLanguage = () => {
 toggleLanguage(); 
 
 languageButton.addEventListener('click', toggleLanguage);
+
+
