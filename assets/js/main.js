@@ -138,10 +138,10 @@ const toggleLanguage = () => {
     elementsToTranslate.forEach(element => {
         if (isEnglish) {
             element.textContent = element.getAttribute('data-english');
-            downloadBtn.href = "assets/pdf/Miguel_Espinoza_English.pdf";
+            downloadBtn.href = "assets/pdf/CV_MEM_English.pdf";
         } else {
             element.textContent = element.getAttribute('data-spanish');
-            downloadBtn.href = "assets/pdf/Miguel_Espinoza_Spanish.pdf";
+            downloadBtn.href = "assets/pdf/CV_MEM_Spanish.pdf";
         }
     });
     
